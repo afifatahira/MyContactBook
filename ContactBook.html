@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="contactStyle.css">
+</head>
+
+<body>
+	<h1>Contact Book</h1>
+	<form class="contact-form" onsubmit="return false">
+		<h3>Add New Contact:</h3>
+		<div>
+			<label for fname>First Name: </label>
+			<input name ="fname" type="text" required></input>
+		</div>
+		
+		<div>
+			<label for lname>Last Name: </label>
+			<input name="lname" type="text"></input>
+		</div>
+		<div>
+			<label for mob>Mobile: </label>
+			<input name="mob" type="text"></input>
+		</div>		
+		<div>
+			<label for email>Email: </label>
+			<input name="email" type="text"></input>
+		</div>		
+		<div>
+			<label for address>Address: </label>
+			<textarea name="address"></textarea>
+		</div>
+		<div id="saveButton">
+			<input id="addContactBtn" type="button" value="Add New Contact"></input>
+		</div>
+
+	</form>
+	<div class='show'>
+		<center>
+		<h2>All Contacts: </h2>
+			<div class='options'>
+				<input id="searchMob" type="text"></input>
+				<input id='searchButton' type="button" value="Search"></input>
+				<input id="refreshButton" type="button" value="Refresh"></input>
+			</div>
+		</center>
+		<table>
+
+		</table>
+	</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="user.js"> </script>
+<script src="formValiadation.js"> </script>
+<script src="contactScript.js"> </script>
+<script src="editScript.js"> </script>
+
+	
+
+</body>
+
+</html>

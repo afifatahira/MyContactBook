@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="contactStyle.css">
+</head>
+	<body>
+		<h1>Contact Book</h1>
+		<form class="contact-form" id="contact-edit" onsubmit="return false">
+			<h3>Edit Contact:</h3>
+			<div>
+				<label for editFname>First Name: </label>
+				<input id ="editFname" name ="fname" type="text"></input>
+			</div>
+			<div>
+				<label for editLname>Last Name: </label>
+				<input id ="editLname" name="lname" type="text"></input>
+			</div>
+			<div>
+				<label for editMob>Mobile: </label>
+				<input id ="editMob" name="mob" type="text"></input>
+			</div>		
+			<div>
+				<label for editEmail>Email: </label>
+				<input id ="editEmail" name="email" type="text"></input>
+			</div>		
+			<div>
+				<label for editAddress>Address: </label>
+				<textarea id ="editAddress" name="address"></textarea>
+			</div>
+			<div>
+				<input id="updateContact" type="button" value="Update Contact"></input>
+				<a href="contactBook.html"><input id="backContact" type="button" value="Back"></input></a>
+			</div>
+
+		</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="user.js"> </script>
+	<script src="formValiadation.js"> </script>
+	<script src="contactScript.js"> </script>
+	<script src="editScript.js"> </script>
+	</body>
+<html>
